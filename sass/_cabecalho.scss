@@ -1,61 +1,37 @@
-/**
-* Estilos do Cabeçalho
-**/
+@import "vars";
+
 .cabecalho{
-  width: 980px;
+  width: $largura-padrao;
   margin: 0 auto;
 }
 
-
-/*******************************/
-/* INÍCIO CABEÇALHO INFORMAÇÃO */
-/*******************************/
 .cabecalho-informacao{
-  background-color: #f1f1f1; /* definindo cor de fundo */
-  /**
-   * Este recurso deverá sempre ser usado em estruturas
-   * que possuam filhos que recebam propriedades float.
-   */
+  background-color: $cabecalho1-fundo;
   overflow: auto;
 }
 
-/**
- * Estilos para qualquer elemento a
- * dentro de cabecalho-informacao
- */
 .cabecalho-informacao a{
-  color: #726060; /* definindo cor do texto */
-  text-decoration: none; /* removendo "underline" */
-  font-size: 12px; /* definindo tamanho do texto */
-  font-weight: bold /* definindo estilo bold para o texto */
-}
-/**
- * utilizando o :hover apenas para que o css aplique
- * os efeitos quando o mouse estiver sobre o elemento
- */
-.cabecalho-informacao a:hover{
-  text-decoration: underline; /* mostrar o "underline" no link */
+  color: $cabecalho1-link-cor;
+  text-decoration: none;
+  font-size: $cabecalho1-link-font-size;
+  font-weight: bold;
 }
 
-/**
- * Estilos para qualquer elemento ul
- * dentro da classe cabecalho-informacao
- */
+.cabecalho-informacao a:hover{
+  text-decoration: underline;
+}
+
 .cabecalho-informacao ul{
-  margin: 5px 0; /* definindo margem (top/bottom) e (left/right) ao mesmo tempo */
+  margin: 5px 0;
 }
 .cabecalho-informacao ul li{
-  float: left; /* estrutura deverá flutuar à esquerda */
-  list-style: none; /* removendo estilo de marcador padrão */
-  padding: 5px 20px; /* espaçamento interno sendo aplicado */
-  border-left: 1px solid #ccc; /* criando uma borda esquerda */
+  float: left;
+  list-style: none;
+  padding: 5px 20px;
+  border-left: $cabecalho1-borda;
 }
-/**
- * apenas para o último elemento do seletor
- * estaremos aplicanado um estilo css
- */
 .cabecalho-informacao ul li:last-child{
-  border-right: 1px solid #ccc; /* criando uma borda direita */
+  border-right: $cabecalho1-borda;
 }
 
 /**

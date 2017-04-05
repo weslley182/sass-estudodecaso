@@ -52,71 +52,34 @@
   border: 1px solid darkgreen;
   background-color: seagreen; }
 
-/**
-* Estilos do Cabeçalho
-**/
 .cabecalho {
-  width: 980px;
+  width: 780px;
   margin: 0 auto; }
 
-/*******************************/
-/* INÍCIO CABEÇALHO INFORMAÇÃO */
-/*******************************/
 .cabecalho-informacao {
   background-color: #f1f1f1;
-  /* definindo cor de fundo */
-  /**
-   * Este recurso deverá sempre ser usado em estruturas
-   * que possuam filhos que recebam propriedades float.
-   */
   overflow: auto; }
 
-/**
- * Estilos para qualquer elemento a
- * dentro de cabecalho-informacao
- */
 .cabecalho-informacao a {
   color: #726060;
-  /* definindo cor do texto */
   text-decoration: none;
-  /* removendo "underline" */
   font-size: 12px;
-  /* definindo tamanho do texto */
   font-weight: bold; }
 
-/**
- * utilizando o :hover apenas para que o css aplique
- * os efeitos quando o mouse estiver sobre o elemento
- */
 .cabecalho-informacao a:hover {
-  text-decoration: underline;
-  /* mostrar o "underline" no link */ }
+  text-decoration: underline; }
 
-/**
- * Estilos para qualquer elemento ul
- * dentro da classe cabecalho-informacao
- */
 .cabecalho-informacao ul {
-  margin: 5px 0;
-  /* definindo margem (top/bottom) e (left/right) ao mesmo tempo */ }
+  margin: 5px 0; }
 
 .cabecalho-informacao ul li {
   float: left;
-  /* estrutura deverá flutuar à esquerda */
   list-style: none;
-  /* removendo estilo de marcador padrão */
   padding: 5px 20px;
-  /* espaçamento interno sendo aplicado */
-  border-left: 1px solid #ccc;
-  /* criando uma borda esquerda */ }
+  border-left: 1px solid #ccc; }
 
-/**
- * apenas para o último elemento do seletor
- * estaremos aplicanado um estilo css
- */
 .cabecalho-informacao ul li:last-child {
-  border-right: 1px solid #ccc;
-  /* criando uma borda direita */ }
+  border-right: 1px solid #ccc; }
 
 /**
  * Bandeira do Brasil
