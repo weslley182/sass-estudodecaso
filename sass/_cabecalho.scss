@@ -6,14 +6,14 @@
 }
 
 .cabecalho-informacao{
-  background-color: $cabecalho1-fundo;
+  background-color: $informacao-fundo;
   overflow: auto;
 }
 
 .cabecalho-informacao a{
-  color: $cabecalho1-link-cor;
+  color: $informacao-link-cor;
   text-decoration: none;
-  font-size: $cabecalho1-link-font-size;
+  font-size: $informacao-font-size;
   font-weight: bold;
 }
 
@@ -28,38 +28,33 @@
   float: left;
   list-style: none;
   padding: 5px 20px;
-  border-left: $cabecalho1-borda;
+  border-left: $informacao-borda;
 }
 .cabecalho-informacao ul li:last-child{
-  border-right: $cabecalho1-borda;
+  border-right: $informacao-borda;
 }
 
-/**
- * Bandeira do Brasil
- */
 .cabecalho-informacao .informacao-brasil{
   float:left;
   width: 100px;
   padding:10px 0;
   padding-left: 20px;
 
-  font: bold 12px/18px tahoma;
+  font: bold $informacao-font-size/18px $font-family-padrao;
   font-weight: bold;
   text-transform: uppercase;
-  color: #726060; /* definindo cor do texto */
+  color: $informacao-link-cor;
 }
 .cabecalho-informacao .informacao-brasil img{
   display: block;
   float: left;
   margin-right: 10px;
-
 }
 .cabecalho-informacao .informacao-brasil span{
   display: block;
   float: left;
   line-height: 20px;
 }
-
 
 .cabecalho-informacao .informacao-servicos{
   float: left;
@@ -71,10 +66,10 @@
 }
 
 .cabecalho-informacao .informacao-links{
-  float: left;
   width: 540px;
   padding: 0;
-  margin: 0px;
+  margin: 0;
+  float: left;
 }
 .cabecalho-informacao .informacao-links ul{
   float: right;
@@ -86,34 +81,29 @@
 /*********************************/
 /* INÍCIO DE CABEÇALHO DESTAQUES */
 /*********************************/
-@font-face{
-  font-family: openSansBold;
-  src: url('../fonts/OpenSans-ExtraBold.ttf');
-}
-
 .cabecalho-destaque{
-  background-color: #0A651A;
   margin: 0;
+  background-color: $destaque-fundo;
   overflow: auto;
 }
 
 .cabecalho-destaque h1{
-  float: left;
   width: 430px;
   padding-left: 20px;
+  float: left;
 
-  font-family: openSansBold, arial, sans-serif, times;
-  font-size: 38px;
-  color: #ffdc19;
+  font-family: $destaque-h1-font-family;
+  font-size: $destaque-h1-font-size;
+  color: $destaque-h1-color;
 }
 
 .cabecalho-destaque .busca{
   width: 510px;
-  float: right;
   padding-top: 30px;
+  float: right;
 }
 .cabecalho-destaque .busca form{
-  background-color: white;
+  background-color: $destaque-form-fundo;
   width: 230px;
   padding: 5px;
   float: right;
@@ -125,9 +115,9 @@
 }
 .cabecalho-destaque .busca form input{
   border: 0;
-  font-size: 12px;
-  color: #666;
   line-height: 18px;
+  font-size: $destaque-busca-input-font-size;
+  color: $destaque-busca-input-color;
 }
 .cabecalho-destaque .busca form input[type="text"]{
   width: 200px;
@@ -137,9 +127,15 @@
   width: 20px;
   float: left
 }
+/******************************/
+/* FIM DE CABEÇALHO DESTAQUES */
+/******************************/
 
+/*********************************/
+/* INÍCIO DE CABEÇALHO OUVIDORIA */
+/*********************************/
 .cabecalho-ouvidoria{
-  background-color: #00420C;
+  background-color: $ouvidoria-fundo;
   margin: 0;
   overflow: auto;
 }
@@ -152,7 +148,7 @@
 .cabecalho-ouvidoria ul li{
   list-style: none;
   display: inline;
-  border-right: 1px solid #999;
+  border-right: $ouvidoria-ul-li-borda;
   padding: 0px 10px;
 }
 .cabecalho-ouvidoria ul li:last-child{
@@ -160,9 +156,9 @@
   padding-right: 0;
 }
 .cabecalho-ouvidoria ul li a{
-  color: white;
+  color: $ouvidoria-link-color;
   text-decoration: none;
-  font-size: 13px;
+  font-size: $ouvidoria-link-font-size;
 }
 /******************************/
 /* FIM DE CABEÇALHO DESTAQUES */

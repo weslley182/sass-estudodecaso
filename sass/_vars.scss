@@ -1,6 +1,28 @@
-$largura-padrao: 780px;
+$largura-padrao: 980px;
+$font-family-padrao: tahoma, arial, times, sans-serif;
 
-$cabecalho1-fundo: #f1f1f1;
-$cabecalho1-link-cor: #726060;
-$cabecalho1-link-font-size: 12px;
-$cabecalho1-borda: 1px solid #ccc;
+// informação (cabeçalho linha 1)
+$informacao-fundo: #f1f1f1;
+$informacao-link-cor: #726060;
+$informacao-font-size: 12px;
+$informacao-link-font-size: 12px;
+$informacao-borda: 1px solid #ccc;
+
+// destaque (cabeçalho linha 2)
+@font-face{
+  font-family: openSansBold;
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+$destaque-fundo: #0A651A;
+$destaque-h1-font-family: openSansBold, arial, sans-serif, times;
+$destaque-h1-font-size: 38px;
+$destaque-h1-color: #ffdc19;
+$destaque-form-fundo: white;
+$destaque-busca-input-font-size: 12px;
+$destaque-busca-input-color: #666;
+
+// ouvidoria (cabeçalho linha 3)
+$ouvidoria-fundo: #00420C;
+$ouvidoria-ul-li-borda: 1px solid #999;
+$ouvidoria-link-color: white;
+$ouvidoria-link-font-size: 13px;
