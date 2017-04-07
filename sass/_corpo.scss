@@ -1,22 +1,22 @@
+@import "vars";
+
 /**
 * Inicio do Corpo Estrutural
 * Composto de 4 Estruturas
 **/
 .corpo{
-  /*    background:blue;*/
-  width: 980px;
+  width: $largura-padrao;
   margin: 0 auto;
-  overflow: auto;
   padding: 10px 0 0 0;
-  /*background: red;*/
+  overflow: auto;
 }
 
 /**
  * Estrutura 1. Banner
  */
 .corpo .banner-principal{
-  text-align: center;
   margin: 10px 0px;
+  text-align: center;
 }
 
 /**
@@ -33,11 +33,11 @@
   padding: 0;
   margin-right: 10px;
 
-  color: black;
-  font-size: 10px
+  color: $mapa-color;
+  font-size: $mapa-font-size;
 }
 .corpo .mapa-do-site ul li a{
-  color: darkblue;
+  color: $mapa-link-color;
   text-decoration: none;
 }
 .corpo .mapa-do-site ul li a:hover{
@@ -59,31 +59,32 @@
   margin: 0 10px;
   padding: 3px 10px;
   list-style: none;
-  border-top: 1px solid #ccc;
+  border-top: $lateral-borda;
 }
 .corpo .estrutura-lateral ul.menu-destaque li:last-child{
-  border-bottom: 1px solid #ccc;
+  border-bottom: $lateral-borda;
 }
 .corpo .estrutura-lateral ul.menu-destaque li a{
   text-decoration: none;
-  font-size: 14px
+  font-size: $lateral-link-font-size;
 }
 
 .corpo .estrutura-lateral ul.menu-estruturado li h3{
-  border-top: 5px solid green;
-  background-color: #ccc;
   padding: 10px;
   padding-bottom: 20px;
-  font-size: 12px;
+  border-top: $lateral-h3-borda;
+  background-color: $lateral-h3-fundo;
+
+  font-size: $lateral-h3-font-size;
   text-transform: uppercase;
 }
 .corpo .estrutura-lateral ul.menu-estruturado li a{
-  color: #333;
-  border-bottom: 1px solid #ccc;
   padding: 10px 20px;
-  text-decoration: none;
-  font-size: 15px;
   display: block;
+  color: $lateral-link-color;
+  border-bottom:$lateral-borda;
+  text-decoration: none;
+  font-size: $lateral-link-font-size;
 }
 .corpo .estrutura-lateral ul.menu-estruturado li li:first-child a{
   padding-top: 0;
@@ -94,9 +95,8 @@
  */
 .corpo .conteudo{
   width: 750px;
-  float: left;
   margin-left: 20px;
-  /*background-color: pink;*/
+  float: left;
 }
 
 /**
@@ -106,12 +106,13 @@
   overflow: auto;
 }
 .corpo .conteudo h3{
-  border-top: 5px solid green;
-  background-color: #ccc;
+  margin-top: 0;
   padding: 10px;
   padding-bottom: 30px;
-  margin-top: 0;
-  font-size: 18px;
+  border-top: $conteudo-h3-borda;
+  background-color: $conteudo-h3-fundo;
+
+  font-size: $conteudo-h3-font-size;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -119,27 +120,27 @@
   text-transform: uppercase;
 }
 .corpo .conteudo .noticia-destaque h4{
-  font-size: 26px;
+  font-size: $conteudo-noticia-destaque-h4-font-size;
   margin: 10px 0;
 }
 .corpo .conteudo .noticia-destaque .noticia-chamada p{
-  font-size: 14px;
+  font-size: $conteudo-noticia-p-font-size;
 }
 .corpo .conteudo .noticia-destaque a{
   text-decoration: none;
-  color: #000;
+  color: $conteudo-noticia-destaque-link-color;
 }
 .corpo .conteudo .noticia-destaque a:hover{
   text-decoration: underline;
 }
 .corpo .conteudo .noticia-destaque .noticia-chamada img{
-  float: left;
   margin-right: 20px;
+  float: left;
 }
 .corpo .conteudo .noticia-destaque .noticia-chamada img.right{
-  float:right;
   margin-right: 0;
   margin-left: 20px;
+  float: right;
 }
 .corpo .conteudo .noticia-destaque-conteudo img{
   float: left;
@@ -176,11 +177,11 @@
   text-decoration: underline;
 }
 .corpo .conteudo .noticia-lista h4{
-  font-size: 15px;
+  font-size: $conteudo-noticia-h4-font-size;
 }
 .corpo .conteudo .noticia-lista p{
-  font-size: 14px;
+  font-size: $conteudo-noticia-p-font-size;
 }
 .corpo .conteudo .noticia-lista small{
-  font-size: 10px;
+  font-size: $conteudo-noticia-small-font-size;
 }

@@ -1,15 +1,16 @@
 // variáveis globais
 $largura-padrao: 980px;
 $font-family-padrao: tahoma, arial, times, sans-serif;
+$font-size-padrao: 12px;
 
-// informação (cabeçalho linha 1)
+// cabeçalho informação (linha 1)
 $informacao-fundo: #f1f1f1;
 $informacao-link-cor: #726060;
-$informacao-font-size: 12px;
-$informacao-link-font-size: 12px;
+$informacao-font-size: $font-family-padrao;
+$informacao-link-font-size: $font-size-padrao;
 $informacao-borda: 1px solid #ccc;
 
-// destaque (cabeçalho linha 2)
+// cabeçalho destaque (linha 2)
 @font-face{
   font-family: openSansBold;
   src: url('../fonts/OpenSans-ExtraBold.ttf');
@@ -19,11 +20,37 @@ $destaque-h1-font-family: openSansBold, arial, sans-serif, times;
 $destaque-h1-font-size: 38px;
 $destaque-h1-color: #ffdc19;
 $destaque-form-fundo: white;
-$destaque-busca-input-font-size: 12px;
+$destaque-busca-input-font-size: $font-size-padrao;
 $destaque-busca-input-color: #666;
 
-// ouvidoria (cabeçalho linha 3)
+// cabeçalho ouvidoria (linha 3)
 $ouvidoria-fundo: #00420C;
 $ouvidoria-ul-li-borda: 1px solid #999;
 $ouvidoria-link-color: white;
 $ouvidoria-link-font-size: 13px;
+
+// corpo - mapa do site
+$mapa-color: black;
+$mapa-font-size: 10px;
+$mapa-link-color: darkblue;
+
+// corpo - estrutura lateral
+$lateral-borda: $informacao-borda;
+$lateral-link-font-size: 14px;
+$lateral-link-color: #333;
+$lateral-h3-borda: 5px solid green;
+$lateral-h3-fundo: #ccc;
+$lateral-h3-font-size: $font-size-padrao;
+
+// corpo - conteúdo
+$conteudo-h3-borda: $lateral-h3-borda;
+$conteudo-h3-fundo: $lateral-h3-fundo;
+$conteudo-h3-font-size: 18px;
+
+$conteudo-noticia-destaque-link-color: black;
+$conteudo-noticia-destaque-h4-font-size: 26px;
+$conteudo-noticia-p-font-size: 14px;
+$conteudo-noticia-h4-font-size: 15px;
+$conteudo-noticia-small-font-size: 10px;
+
+

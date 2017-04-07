@@ -66,7 +66,7 @@
 .cabecalho-informacao a {
   color: #726060;
   text-decoration: none;
-  font-size: 12px;
+  font-size: tahoma, arial, times, sans-serif;
   font-weight: bold; }
 
 .cabecalho-informacao a:hover {
@@ -89,7 +89,7 @@
   width: 100px;
   padding: 10px 0;
   padding-left: 20px;
-  font: bold 0.66667 tahoma, arial, times, sans-serif;
+  font: bold tahoma, arial, times, sans-serif/18px tahoma, arial, times, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #726060; }
@@ -204,24 +204,25 @@
 /******************************/
 /* FIM DE CABEÇALHO DESTAQUES */
 /******************************/
+@font-face {
+  font-family: openSansBold;
+  src: url("../fonts/OpenSans-ExtraBold.ttf"); }
 /**
 * Inicio do Corpo Estrutural
 * Composto de 4 Estruturas
 **/
 .corpo {
-  /*    background:blue;*/
   width: 980px;
   margin: 0 auto;
-  overflow: auto;
   padding: 10px 0 0 0;
-  /*background: red;*/ }
+  overflow: auto; }
 
 /**
  * Estrutura 1. Banner
  */
 .corpo .banner-principal {
-  text-align: center;
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  text-align: center; }
 
 /**
  * Estrutura 2. Mapa do Site
@@ -270,20 +271,20 @@
   font-size: 14px; }
 
 .corpo .estrutura-lateral ul.menu-estruturado li h3 {
-  border-top: 5px solid green;
-  background-color: #ccc;
   padding: 10px;
   padding-bottom: 20px;
+  border-top: 5px solid green;
+  background-color: #ccc;
   font-size: 12px;
   text-transform: uppercase; }
 
 .corpo .estrutura-lateral ul.menu-estruturado li a {
+  padding: 10px 20px;
+  display: block;
   color: #333;
   border-bottom: 1px solid #ccc;
-  padding: 10px 20px;
   text-decoration: none;
-  font-size: 15px;
-  display: block; }
+  font-size: 14px; }
 
 .corpo .estrutura-lateral ul.menu-estruturado li li:first-child a {
   padding-top: 0; }
@@ -293,9 +294,8 @@
  */
 .corpo .conteudo {
   width: 750px;
-  float: left;
   margin-left: 20px;
-  /*background-color: pink;*/ }
+  float: left; }
 
 /**
  * Notícia em Destaque
@@ -304,11 +304,11 @@
   overflow: auto; }
 
 .corpo .conteudo h3 {
-  border-top: 5px solid green;
-  background-color: #ccc;
+  margin-top: 0;
   padding: 10px;
   padding-bottom: 30px;
-  margin-top: 0;
+  border-top: 5px solid green;
+  background-color: #ccc;
   font-size: 18px;
   font-weight: normal;
   text-transform: uppercase; }
@@ -325,19 +325,19 @@
 
 .corpo .conteudo .noticia-destaque a {
   text-decoration: none;
-  color: #000; }
+  color: black; }
 
 .corpo .conteudo .noticia-destaque a:hover {
   text-decoration: underline; }
 
 .corpo .conteudo .noticia-destaque .noticia-chamada img {
-  float: left;
-  margin-right: 20px; }
+  margin-right: 20px;
+  float: left; }
 
 .corpo .conteudo .noticia-destaque .noticia-chamada img.right {
-  float: right;
   margin-right: 0;
-  margin-left: 20px; }
+  margin-left: 20px;
+  float: right; }
 
 .corpo .conteudo .noticia-destaque-conteudo img {
   float: left;
@@ -386,7 +386,5 @@
 * Início do Rodapé Estrutural
 * Estilos do Rodapé
 **/
-.rodape {
-  background: yellow; }
 
 /*# sourceMappingURL=projeto.css.map */
