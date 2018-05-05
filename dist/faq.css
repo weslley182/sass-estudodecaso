@@ -1,0 +1,9 @@
+.form-contato, .form-ouvidoria, .cabecalho {
+  padding: 50px;
+  display: block;
+  text-align: center; }
+
+.form-ouvidoria, .cabecalho {
+  float: right; }
+
+/*# sourceMappingURL=faq.css.map */

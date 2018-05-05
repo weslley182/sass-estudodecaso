@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,8BAAc;EAHV,OAAO,EAIc,IAAI;EAC3B,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,MAAM;;ACLpB,eAAgB;EAEd,KAAK,EAAE,KAAK",
+"sources": ["../sass/form-contato.scss","../sass/form-ouvidora.scss"],
+"names": [],
+"file": "form-ouvidora.css"
+}

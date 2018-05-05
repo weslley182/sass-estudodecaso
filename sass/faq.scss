@@ -1,0 +1,9 @@
+@import 'form-ouvidora';
+
+@mixin aplicaEstilo($aplica){
+  @if $aplica { @extend .form-ouvidoria; }
+}
+
+.cabecalho{
+  @include aplicaEstilo(true);  
+}

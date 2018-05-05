@@ -1,0 +1,10 @@
+@mixin preenchimento($padding: 10px) {
+    padding: $padding;
+}
+
+.form-contato {
+  @include preenchimento(50px);
+  display: block;
+  text-align: center;
+}
+

@@ -1,0 +1,6 @@
+@import 'form-contato';
+
+.form-ouvidoria {
+  @extend .form-contato;
+  float: right;
+}
