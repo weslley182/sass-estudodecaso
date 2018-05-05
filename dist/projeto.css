@@ -1,4 +1,16 @@
 html {
-  background: red; }
+  background: blue; }
+
+.cabecalho {
+  width: 980px;
+  margin: 0 auto; }
+  .cabecalho .cabecalho-informacao {
+    background-color: #f1f1f1;
+    overflow: auto; }
+    .cabecalho .cabecalho-informacao cabecalho-informacao a {
+      color: #726060;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=projeto.css.map */

@@ -1,5 +1,22 @@
-$corFundo: red;
+$corFundo: blue;
 
 html{
 	background: $corFundo;
+}
+
+.cabecalho {
+  width: 980px;
+  margin: 0 auto;
+  
+  .cabecalho-informacao {
+    background-color: #f1f1f1;
+    overflow: auto;
+	
+    cabecalho-informacao a {
+       color: #726060;
+	   text-decoration: none;
+       font-size: 12px;
+       font-weight: bold;
+    }
+  }
 }
